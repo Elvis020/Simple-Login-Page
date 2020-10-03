@@ -14,21 +14,16 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.527)), url('./img/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg') no-repeat;
     background-size: cover;
     height: 100vh;
-    display: flex;
+    padding-top: 15vh;
 }
 
 .text, .box {
-    margin-top: 45vh;
-    flex: 1;
+text-align: center;
 }
 
 .text {
-    margin-left: 10%;
+    text-align: center;
     font-weight: 500;
-}
-
-.box {
-    margin-left: 35%;
 }
 
 .text h1 {
@@ -53,7 +48,8 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    width: 250px;
+    margin: 15px;
+    align-items: center;
 }
 
 input {
@@ -63,6 +59,7 @@ input {
     border: none;
     outline: none;
     color: #fff;
+    width: 250px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -82,4 +79,17 @@ input {
     background: #fff;
     color: #000;
 
+}
+
+@media (min-width: 768px) {
+
+.box {
+    margin-right: 10%;
+}
+
+.text { margin-left: 10%;}
+.background {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45vh;}
 }
